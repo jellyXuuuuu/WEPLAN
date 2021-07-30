@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+
+<!-- <h1>Hello World</h1>
+{{ request.user.is_authenticated }}
+<p>This is a template.</p> -->
+
+
+<!-- Extends the base html file that has all the repeated things that all files need -->
+
+
+<!-- Inserts header elements unique to this file into base template so can still use-->
+{% block head %}
+    <!--  Importing CSS style sheet -->
+    
+
+    <title>XXXXX</title>
+{% endblock %}
+
+
+{% block body %}
+ <a class="" href="/contact">CONTACT</a>
+ <a class="" href="/about">ABOUT</a>
+ <a class="" href="/social">SOCIAL</a>
+{% endblock %}
