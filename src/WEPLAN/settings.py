@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # third party app
+    # 'adminale3',
 
     # own
     'product',
@@ -129,6 +130,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"), 
 ]
