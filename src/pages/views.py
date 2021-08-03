@@ -23,3 +23,12 @@ def about_view(request, *args, **kwargs):  # *args, **kwargs
 def social_view(request, *args, **kwargs):  # *args, **kwargs
     # return HttpResponse("<h1>Social</h1>") # string of HTML code
     return render(request, "social.html", {})
+
+
+def starter_view(request, *args, **kwargs):  # *args, **kwargs
+    # return HttpResponse("<h1>Social</h1>") # string of HTML code
+    return render(request, "starter.html", {})
+
+
+def index(request):
+    return render(request, 'index.html')
