@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+# import testab
 
 # Create your views here.
 def home_view(request, *args, **kwargs):  # *args, **kwargs
@@ -22,4 +23,5 @@ def about_view(request, *args, **kwargs):  # *args, **kwargs
 
 def social_view(request, *args, **kwargs):  # *args, **kwargs
     # return HttpResponse("<h1>Social</h1>") # string of HTML code
+    # testab.printing()
     return render(request, "social.html", {})
