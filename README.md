@@ -12,3 +12,4 @@
 
 ## use other 'app':
 1. from github - https://github.com/gabrielecirulli/2048, use this game created by just html5
+2. 'bootstrap' - https://github.com/ColorlibHQ/AdminLTE

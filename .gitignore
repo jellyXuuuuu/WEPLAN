@@ -1,0 +1,10 @@
+# created by virtualenv automatically
+# *
+#.gitignore
+Lib/
+Scripts/
+WEPLAN.sublime-workspace
+pyvenv.cfg
+# src/WEPLAN.sublime-workspace
+db.sqlite3
+__pycache__/
