@@ -1,0 +1,20 @@
+# *
+#.gitignore
+Lib/
+Scripts/
+WEPLAN.sublime-workspace
+pyvenv.cfg
+# src/WEPLAN.sublime-workspace
+db.sqlite3
+__pycache__/
+*.zip
+src/static/bootstrap-3.4.1/
+src/static/plugins/
+src/static/bootstrap/
+
+
+# more setting?
+src/WEPLAN/__pycache__/settings.cpython-38.pyc
+src/WEPLAN/__pycache__/urls.cpython-38.pyc
+src/pages/__pycache__/views.cpython-38.pyc
+
