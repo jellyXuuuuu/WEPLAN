@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+    <title>Product Detail</title>
+    
+{% endblock %}
+
+
+{% block body %}
+
+<h1>INapp | Product Detail</h1>
+<p>
+{{ object.title }}
+</p>
+<p>
+    {% if object.description != None and object.description != '' %}
+
+{{ object.description }}
+
+    {% else %}
+    Description is comping soon..
+    {% endif %}
+</p>
+
+<a class="" href="/">BACK TO HOME</a>
+{% endblock %}

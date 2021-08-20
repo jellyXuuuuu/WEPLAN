@@ -1,5 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from blog.models import Post, Category, Tag
+from product.models import Product
 
 # Create your views here.
 def home_view(request, *args, **kwargs):  # *args, **kwargs
@@ -9,7 +11,12 @@ def home_view(request, *args, **kwargs):  # *args, **kwargs
 
 def contact_view(request, *args, **kwargs):  # *args, **kwargs
     # return HttpResponse("<h1>Contact</h1>") # string of HTML code
-    return render(request, "contact.html", {})
+    post_list = Post.objects.all().order_by('-created_time')
+    tag_list = Tag.objects.all()
+    return render(request, "contact.html",
+     context={'post_list': post_list,
+              'tag_list': tag_list,}
+     )
 
 def about_view(request, *args, **kwargs):  # *args, **kwargs
     # return HttpResponse("<h1>About</h1>") # string of HTML code
