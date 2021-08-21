@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+    <title>Product Detail</title>
+    
+{% endblock %}
+
+
+{% block body %}
+
+<h1>INapp | Product create</h1>
+<form method="POST"> {% csrf_token %}
+    {{ form.as_p }}
+
+    <input type="submit" value="Save">
+
+</form>
+
+
+<a class="" href="/">BACK TO HOME</a>
+{% endblock %}
